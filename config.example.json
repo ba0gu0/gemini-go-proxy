@@ -1,0 +1,25 @@
+{
+  "host": "localhost",
+  "port": 8081,
+  "client_id": "",
+  "redirect_url": "http://localhost:8081",
+  "proxy_urls": [
+    "http://proxy1.example.com:8080",
+    "http://proxy2.example.com:8080"
+  ],
+  "api_keys": [
+    "proxy-access-key-1",
+    "proxy-access-key-2"
+  ],
+  "api_mode": "code_assist",
+  "project_id": "your-gcp-project-id",
+  "location": "us-central1",
+  "timeout_seconds": 30,
+  "max_retries": 3,
+  "user_agent": "gemini-go-proxy/1.0.0",
+  "token_file": "base64-encoded-oauth-token-here",
+  "log_level": "info",
+  "enable_cors": true,
+  "system_prompt_file": "system_prompt.txt",
+  "system_prompt_mode": "overwrite"
+}
