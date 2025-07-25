@@ -40,7 +40,7 @@ type Config struct {
 	// 基本服务器配置
 	Host        string `json:"host"`
 	Port        int    `json:"port"`
-	ClientID    string `json:"client_id"`    // 用于标识当前主机的唯一ID
+	ClientID    string `json:"client_id"` // 用于标识当前主机的唯一ID
 	RedirectURL string `json:"redirect_url"`
 
 	// 代理配置
@@ -82,23 +82,23 @@ func (c *Config) GetTimeout() time.Duration {
 // DefaultConfig 返回简化的默认配置
 func DefaultConfig() *Config {
 	return &Config{
-		Host:               "localhost",
-		Port:               8081,
-		ClientID:           "",
-		RedirectURL:        "http://localhost:8081",
-		ProxyURLs:          []string{},
-		APIKeys:            []string{},
-		APIMode:        CodeAssist,
-		ProjectID:      "",
-		Location:       "us-central1",
-		TimeoutSeconds: 300,
-		MaxRetries:     3,
-		UserAgent:      "gemini-go-proxy/1.0.0",
-		TokenFile:          "",
-		LogLevel:           "info",
-		EnableCORS:         true,
-		SystemPromptFile:   "",
-		SystemPromptMode:   "",
+		Host:             "localhost",
+		Port:             8081,
+		ClientID:         "",
+		RedirectURL:      "http://localhost:8081",
+		ProxyURLs:        []string{},
+		APIKeys:          []string{},
+		APIMode:          CodeAssist,
+		ProjectID:        "",
+		Location:         "us-central1",
+		TimeoutSeconds:   300,
+		MaxRetries:       3,
+		UserAgent:        "GeminiCLI/1.2.3 (darwin; arm64)",
+		TokenFile:        "",
+		LogLevel:         "info",
+		EnableCORS:       true,
+		SystemPromptFile: "",
+		SystemPromptMode: "",
 	}
 }
 

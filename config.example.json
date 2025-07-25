@@ -16,7 +16,7 @@
   "location": "us-central1",
   "timeout_seconds": 30,
   "max_retries": 3,
-  "user_agent": "gemini-go-proxy/1.0.0",
+  "user_agent": "GeminiCLI/1.2.3 (darwin; arm64)",
   "token_file": "base64-encoded-oauth-token-here",
   "log_level": "info",
   "enable_cors": true,
