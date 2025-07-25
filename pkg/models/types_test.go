@@ -251,7 +251,7 @@ func TestCodeAssistRequest_JSON(t *testing.T) {
 	assert.NotNil(t, unmarshaledReq.Request)
 	assert.Equal(t, len(req.Request.Contents), len(unmarshaledReq.Request.Contents))
 	assert.Equal(t, req.Request.Contents[0].Role, unmarshaledReq.Request.Contents[0].Role)
-	assert.Equal(t, req.Request.Contents[0].Parts[0].Text, unmarshaledResp.Request.Contents[0].Parts[0].Text)
+	assert.Equal(t, req.Request.Contents[0].Parts[0].Text, unmarshaledReq.Request.Contents[0].Parts[0].Text)
 }
 
 func TestGeminiStreamChunk_JSON(t *testing.T) {
